@@ -14,6 +14,7 @@ import com.example.findinglogs.view.recyclerview.adapter.WeatherListAdapter;
 import com.example.findinglogs.viewmodel.MainViewModel;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,8 +36,11 @@ public class MainActivity extends AppCompatActivity {
         mainViewModel.getWeatherList().observe(this,
                 weathers -> adapter.updateWeathers(weathers));
 
-        fetchButton.setOnClickListener(v ->
-                Toast.makeText(MainActivity.this, "Not Implemenented yet",
-                Toast.LENGTH_SHORT).show());
+        fetchButton.setOnClickListener(v -> {
+            mainViewModel.fetchAllForecasts();
+            Toast.makeText(MainActivity.this, "Refreshing",
+                Toast.LENGTH_SHORT).show();
+        });
+
     }
 }
