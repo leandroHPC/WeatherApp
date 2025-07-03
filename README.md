@@ -17,14 +17,14 @@ We use predefined latitude and longitude coordinates from various cities to fetc
 
 The app is functional, but there are still some improvements and bug fixes to be made. Here's what's on our radar:
 
-- [ ] 🔑 Add your API key to the `local.properties` file:
+- [ ] 🔑 Add your API key to the `local.properties` file: --done
 `WEATHER_API_KEY= <your-api-key-here>`
 - [ ] 📊 Fetch and display **pressure** data from the API
-- [ ] 🔄 Implement data refresh on **Refresh** button click
-- [ ] 🎨 Fix broken **weather icons**
-- [ ] 🧹 Eliminate **duplicate data** issues
+- [ ] 🔄 Implement data refresh on **Refresh** button click-- broke regular timer 
+- [ ] 🎨 Fix broken **weather icons** --log view model
+- [ ] 🧹 Eliminate **duplicate data** issues --done
 
----
+--- 
 
 ## 🧠 Your Mission (Should You Choose to Accept It)
 
